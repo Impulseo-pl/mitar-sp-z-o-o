@@ -3,156 +3,472 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meble na wymiar, lakiernia meblowa i CNC Błonie | MITAR</title>
-<meta name="description" content="MITAR Radonice pod Błoniem: meble na wymiar, kuchnie, szafy i zabudowy, własna lakiernia meblowa i frezowanie CNC. Od 2001 roku. Zadzwoń: +48 660 410 583.">
+<meta name="robots" content="noindex,nofollow">
+<title>MITAR — meble na wymiar, lakiernia meblowa i CNC | Radonice pod Błoniem</title>
+<meta name="description" content="MITAR — rodzinna manufaktura pięknych wnętrz od 2001 roku. Kuchnie, szafy, garderoby i zabudowy na wymiar. Własna lakiernia meblowa i frezowanie CNC w Radonicach pod Błoniem. Bezpłatny pomiar i projekt: 660 410 583.">
+<meta name="theme-color" content="#17140F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MITAR — rodzinna manufaktura pięknych wnętrz">
+<meta property="og:description" content="Kuchnie, szafy i zabudowy na wymiar. Własna lakiernia meblowa i frezowanie CNC. Radonice pod Błoniem, od 2001 roku.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp" type="image/webp">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body>
+<body id="top">
 
-<header class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand brand-has-logo" href="index.html"><img class="brand-logo" src="img/logo.jpg" alt="MITAR"></a>
-    <nav class="nav-links">
-      <a href="index.html" class="active">Strona główna</a>
-      <a href="realizacje.html">Realizacje</a>
-      <a href="oferta.html">Oferta</a>
-      <a href="o-nas.html">O nas</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="kontakt.html" class="btn btn-accent">Zapytaj o wycenę</a>
+<!-- ============ PASEK UTILITY ============ -->
+<div class="util">
+  <div class="wrap">
+    <span class="util-left">Rodzinna manufaktura pięknych wnętrz · ESTD 2001</span>
+    <span class="util-right">
+      <span class="sep"><span class="dot"></span>Radonice 38, gm. Błonie</span>
+      <a href="tel:+48660410583">660 410 583</a>
+      <a href="mailto:mitarmeble@gmail.com">mitarmeble@gmail.com</a>
+    </span>
+  </div>
+</div>
+
+<!-- ============ NAWIGACJA ============ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="MITAR — strona główna">
+      <img src="img/logo.png" alt="MITAR — rodzinna manufaktura pięknych wnętrz" width="323" height="330">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#manufaktura">Manufaktura</a>
+      <a href="#zakres">Zakres</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#lakiernia">Lakiernia i CNC</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#kontakt" class="btn btn-dark btn-sm">Bezpłatny pomiar</a>
     </nav>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<section class="hero-cine">
-  <img src="img/hero.jpg" alt="MITAR - Od 25 lat robimy meble pod konkretne wnętrza. ">
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg">
+    <picture>
+      <source srcset="img/hero.webp" type="image/webp">
+      <img src="img/hero.jpg" alt="Salon z zabudową na wymiar wykonaną przez MITAR" width="2000" height="1330" fetchpriority="high">
+    </picture>
+  </div>
   <div class="wrap">
-    <div class="hero-copy">
-      <span class="eyebrow">Meble na wymiar · od 2001</span>
-      <h1>Od 25 lat robimy meble pod konkretne wnętrza. </h1>
-      <p class="lead">Kuchnie, szafy i zabudowy z warsztatu w Radonicach pod Błoniem. Frezowanie, lakierowanie i montaż robimy u siebie, od 2001 roku.</p>
-      <div class="hero-actions">
-        <a href="realizacje.html" class="btn btn-accent">Zobacz realizacje <span class="arr">→</span></a>
-        <a href="kontakt.html" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.45)">Zapytaj o wycenę</a>
-      </div>
-      <div style="margin-top:var(--space-6);color:#fff;font-weight:600;letter-spacing:.02em;opacity:.92"><svg class="ico-star" width="14" height="14" viewBox="0 0 24 24" style="vertical-align:-2px" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg> Ocena 4,1 w Google · 34 opinie</div>
+    <img class="hero-mark" src="img/logo-light.png" alt="MITAR — rodzinna manufaktura pięknych wnętrz, od 2001" width="323" height="330">
+    <span class="eyebrow">Meble na wymiar · Radonice pod Błoniem</span>
+    <h1>Meble, które wyglądają jak <em>część domu</em>, a nie dostawka</h1>
+    <p class="lead">Kuchnie, szafy i zabudowy z jednego warsztatu — od pomiaru, przez frezowanie CNC i lakiernię, po montaż.</p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn btn-gold">Zamów bezpłatny pomiar <span class="arr">→</span></a>
+      <a href="#realizacje" class="btn btn-ghost-light">Zobacz realizacje</a>
+    </div>
+    <div class="hero-facts">
+      <span class="f"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg> <b>4,1</b> w Google · 34 opinie</span>
+      <span class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg> <b>Od 2001</b> w jednym warsztacie</span>
+      <span class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg> Własna <b>lakiernia i CNC</b></span>
     </div>
   </div>
 </section>
-<section class="strip" style="padding-block:0">
+
+<!-- ============ PASEK FAKTÓW ============ -->
+<section class="strip">
   <div class="wrap">
-    <div class="item reveal"><div class="k">Bezpłatny pomiar i projekt</div><div class="v"></div></div>
-    <div class="item reveal"><div class="k">Własna lakiernia i CNC</div><div class="v"></div></div>
-    <div class="item reveal"><div class="k">Jedna cena za całość</div><div class="v"></div></div>
-    <div class="item reveal"><div class="k">Gwarancja na meble i montaż</div><div class="v"></div></div>
+    <div class="it reveal"><div class="n">25 <small>lat</small></div><div class="t">Meble na wymiar robimy nieprzerwanie od 2001 roku.</div></div>
+    <div class="it reveal" data-d="1"><div class="n">A<small>→</small>Z</div><div class="t">Rozkrój, frezowanie, lakierowanie i montaż — u nas, bez podwykonawców.</div></div>
+    <div class="it reveal" data-d="2"><div class="n">4,1 <small>/ 5</small></div><div class="t">Ocena w Google na podstawie 34 opinii klientów.</div></div>
+    <div class="it reveal" data-d="3"><div class="n">0 <small>zł</small></div><div class="t">Za pomiar u Ciebie i projekt z wymiarami przed decyzją.</div></div>
   </div>
 </section>
-<section>
+
+<!-- ============ MANUFAKTURA ============ -->
+<section id="manufaktura">
   <div class="wrap split">
-    <div class="split-art reveal"><img src="img/g11.jpg" alt="MITAR - realizacja" loading="lazy"></div>
-    <div class="split-copy reveal">
+    <div class="split-art reveal">
+      <div class="ph">
+        <picture>
+          <source srcset="img/about.webp" type="image/webp">
+          <img src="img/about.jpg" alt="Showroom MITAR w Radonicach — zabudowa z frontami lakierowanymi" loading="lazy" width="1400" height="1376">
+        </picture>
+      </div>
+      <span class="frame" aria-hidden="true"></span>
+      <div class="badge"><div class="k">Radonice 38</div><div class="v">Warsztat, lakiernia i showroom</div></div>
+    </div>
+    <div class="split-copy reveal" data-d="1">
       <span class="eyebrow">Kim jesteśmy</span>
-      <h2>Kto to robi</h2>
-      <p class="muted">Meble robimy od 25 lat. Zaczynamy od rozmowy u Ciebie w domu: gdzie co ma stać i jak chodzą drzwi obok.</p>
-      <p class="muted">Dopiero potem siadamy do projektu. Z warsztatu mebel wyjeżdża, kiedy pasuje co do milimetra - zły wymiar to nasz problem, nie Twój.</p>
-      <a href="o-nas.html" class="btn btn-ghost">Poznaj nas <span class="arr">→</span></a>
+      <h2>Manufaktura, w której wszystko dzieje się pod jednym dachem</h2>
+      <p class="muted">MITAR to rodzinna firma z Radonic pod Błoniem. Od 2001 roku projektujemy i wykonujemy meble na wymiar — kuchnie, szafy, garderoby i zabudowy, które mają wyglądać jak zaplanowane razem z domem.</p>
+      <p class="muted">Płytę rozkrawamy i frezujemy na własnych maszynach CNC, fronty malujemy w lakierni obok. Nic nie jeździ do podwykonawców, więc odcień można dopasować na miejscu, a cały komplet schodzi w jednym tonie.</p>
+      <ul class="checks">
+        <li>Pomiar u Ciebie: sprawdzamy piony ścian i przebieg instalacji, nie tylko szerokość wnęki.</li>
+        <li>Projekt z wymiarami i ceną przed zamówieniem materiału.</li>
+        <li>Fronty i próbniki obejrzysz na żywo w showroomie w Radonicach.</li>
+      </ul>
+      <a href="#zakres" class="btn btn-ghost">Zobacz, co robimy <span class="arr">→</span></a>
     </div>
   </div>
 </section>
-<section class="gateways-band">
+
+<!-- ============ ZAKRES ============ -->
+<section id="zakres" class="process" style="background:var(--paper)">
   <div class="wrap">
-    <div class="gateways">
-      <a href="oferta.html" class="gateway reveal"><img src="img/g12.jpg" alt="Kuchnia z wyspą" loading="lazy"><span class="g-ttl">Kuchnie na wymiar</span></a>
-      <a href="oferta.html" class="gateway reveal"><img src="img/g13.jpg" alt="Meble pokojowe i zabudowa RTV" loading="lazy"><span class="g-ttl">Meble pokojowe i RTV</span></a>
-      <a href="oferta.html" class="gateway reveal"><img src="img/g8.jpg" alt="Szafy i zabudowy na wymiar" loading="lazy"><span class="g-ttl">Szafy i zabudowy</span></a>
-      <a href="oferta.html" class="gateway reveal"><img src="img/g6.jpg" alt="Lakiernia meblowa i frezowanie CNC" loading="lazy"><span class="g-ttl">Lakiernia i frezowanie CNC</span></a>
+    <div class="head reveal">
+      <span class="eyebrow">Zakres</span>
+      <h2>Meble do każdego pomieszczenia, w którym gotowe wymiary zawodzą</h2>
+      <p>Projektujemy od środka: najpierw ustalamy, co ma się zmieścić, dopiero potem rysujemy fronty.</p>
+    </div>
+    <div class="svc-grid">
+      <a class="svc reveal" href="#kontakt">
+        <div class="ph"><span class="no">01</span>
+          <picture><source srcset="img/g12.webp" type="image/webp"><img src="img/g12.jpg" alt="Kuchnia na wymiar z wyspą" loading="lazy" width="1500" height="1000"></picture>
+        </div>
+        <div class="bd">
+          <h3>Kuchnie na wymiar</h3>
+          <p>Zabudowa rozrysowana pod Twoje sprzęty i nawyki: wysokość blatu pod Twój wzrost, szuflady tam, gdzie sięgasz najczęściej, szafki prowadzone do sufitu.</p>
+          <span class="more">Zapytaj o wycenę <span class="arr">→</span></span>
+        </div>
+      </a>
+      <a class="svc reveal" data-d="1" href="#kontakt">
+        <div class="ph"><span class="no">02</span>
+          <picture><source srcset="img/g10.webp" type="image/webp"><img src="img/g10.jpg" alt="Szafa i zabudowa narożna w sypialni" loading="lazy" width="1035" height="1500"></picture>
+        </div>
+        <div class="bd">
+          <h3>Szafy i garderoby</h3>
+          <p>Wnękę mierzymy w kilku punktach, bo ściany rzadko stoją prosto. Zabudowę docinamy pod realne wymiary — efekt wygląda, jakby był tam od budowy domu.</p>
+          <span class="more">Zapytaj o wycenę <span class="arr">→</span></span>
+        </div>
+      </a>
+      <a class="svc reveal" data-d="2" href="#kontakt">
+        <div class="ph"><span class="no">03</span>
+          <picture><source srcset="img/g9.webp" type="image/webp"><img src="img/g9.jpg" alt="Obudowa kominka z ryflowanym frontem" loading="lazy" width="909" height="1500"></picture>
+        </div>
+        <div class="bd">
+          <h3>Zabudowy wnęk i skosów</h3>
+          <p>Skosy, kominy i wnęki, w które nie wchodzi nic gotowego. Odkurzacz dostaje swoją wysokość, deska do prasowania swój hak, a całość czyta się jak fragment ściany.</p>
+          <span class="more">Zapytaj o wycenę <span class="arr">→</span></span>
+        </div>
+      </a>
+      <a class="svc reveal" href="#kontakt">
+        <div class="ph"><span class="no">04</span>
+          <picture><source srcset="img/g7.webp" type="image/webp"><img src="img/g7.jpg" alt="Komoda RTV z frezowanym frontem" loading="lazy" width="1400" height="988"></picture>
+        </div>
+        <div class="bd">
+          <h3>Meble pokojowe i RTV</h3>
+          <p>Szafka RTV pod tę jedną ścianę, biurko we wnękę, ryflowane fronty frezowane u nas na CNC. Powtarzalny detal wychodzi identycznie w każdym elemencie.</p>
+          <span class="more">Zapytaj o wycenę <span class="arr">→</span></span>
+        </div>
+      </a>
+      <a class="svc reveal" data-d="1" href="#kontakt">
+        <div class="ph"><span class="no">05</span>
+          <picture><source srcset="img/g4.webp" type="image/webp"><img src="img/g4.jpg" alt="Zabudowa łazienkowa z drewnianym frontem" loading="lazy" width="998" height="1500"></picture>
+        </div>
+        <div class="bd">
+          <h3>Meble łazienkowe</h3>
+          <p>Płyty i fronty odporne na parę i wodę, okucia, które nie rdzewieją. Szafka podumywalkowa dopasowana do wymiaru pomieszczenia, nie do katalogu.</p>
+          <span class="more">Zapytaj o wycenę <span class="arr">→</span></span>
+        </div>
+      </a>
+      <a class="svc reveal" data-d="2" href="#kontakt">
+        <div class="ph"><span class="no">06</span>
+          <picture><source srcset="img/g5.webp" type="image/webp"><img src="img/g5.jpg" alt="Kuchnia z frontami z litego drewna" loading="lazy" width="997" height="1500"></picture>
+        </div>
+        <div class="bd">
+          <h3>Blaty i lite drewno</h3>
+          <p>Blat na wyspę, nakładki na betonowe schody, drewniane detale. Wymiar bierzemy po wykończeniu ścian, bo tu milimetry decydują o tym, czy wszystko siedzi cicho.</p>
+          <span class="more">Zapytaj o wycenę <span class="arr">→</span></span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
+
+<!-- ============ MILIMETRY / SPLIT 2 ============ -->
 <section>
+  <div class="wrap split rev">
+    <div class="split-art reveal" data-d="1">
+      <div class="ph">
+        <picture><source srcset="img/g8.webp" type="image/webp"><img src="img/g8.jpg" alt="Biała zabudowa przedpokoju na wymiar" loading="lazy" width="1055" height="1492"></picture>
+      </div>
+      <span class="frame" aria-hidden="true"></span>
+    </div>
+    <div class="split-copy reveal">
+      <span class="eyebrow">Jak to robimy</span>
+      <h2>Mebel wyjeżdża z warsztatu, kiedy pasuje co do milimetra</h2>
+      <p class="muted">Zaczynamy od rozmowy u Ciebie: gdzie co ma stać, jak chodzą drzwi obok, którędy biegną rury. Dopiero potem siadamy do projektu.</p>
+      <p class="muted">Zły wymiar to nasz problem, nie Twój — dlatego wolimy poświęcić godzinę na pomiar niż tydzień na poprawki. Montaż kończymy z Tobą na miejscu, sprawdzając każdą szufladę i zawias.</p>
+      <ul class="checks">
+        <li>Frezowanie i lakierowanie w jednej hali — jeden odcień w całym zamówieniu.</li>
+        <li>Terminy ustalane przy przyjęciu zlecenia, nie po fakcie.</li>
+        <li>Gwarancja na meble i montaż.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCES ============ -->
+<section class="process">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Proces</span>
+      <h2>Pięć kroków od rozmowy do gotowej zabudowy</h2>
+      <p>Na każdym etapie wiesz, co się dzieje i ile to kosztuje. Pomiar i projekt są bezpłatne i do niczego nie zobowiązują.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="no">01</div><h3>Rozmowa</h3><p>Opowiadasz, co i gdzie ma stanąć. Podpowiadamy rozwiązania, które sprawdziły się u innych.</p></div>
+      <div class="step reveal" data-d="1"><div class="no">02</div><h3>Pomiar i projekt</h3><p>Przyjeżdżamy z miarą, sprawdzamy piony i instalacje. Dostajesz rysunek z wymiarami i cenę.</p></div>
+      <div class="step reveal" data-d="2"><div class="no">03</div><h3>Materiał i kolor</h3><p>Płytę, fronty i odcień lakieru wybierasz z próbników — na żywo, w showroomie w Radonicach.</p></div>
+      <div class="step reveal" data-d="3"><div class="no">04</div><h3>Produkcja</h3><p>Rozkrój, frezowanie CNC i lakierowanie w naszej hali. Elementy z jednego zamówienia schodzą razem.</p></div>
+      <div class="step reveal" data-d="3"><div class="no">05</div><h3>Montaż</h3><p>Wnosimy, składamy i regulujemy u Ciebie. Zdjęcia robimy dopiero, gdy zniknie ostatni karton.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REALIZACJE ============ -->
+<section id="realizacje">
   <div class="wrap">
     <div class="head reveal">
       <span class="eyebrow">Realizacje</span>
       <h2>Z ostatnich montaży</h2>
-      <p>Każda z tych kuchni i szaf u kogoś stoi i pracuje. Zdjęcia robimy po montażu, jak zniknie ostatni karton.</p>
+      <p>Każda z tych kuchni i zabudów u kogoś stoi i pracuje. Kliknij kadr, żeby zobaczyć go w powiększeniu.</p>
     </div>
-    <div class="gallery">
-      <div class="tile t-two3 reveal"><img src="img/g1.jpg" alt="Kuchnia z wyspą na wymiar" loading="lazy"><div class="cap">Kuchnia z wyspą na wymiar</div></div>
-      <div class="tile t-third reveal"><img src="img/g2.jpg" alt="Zabudowa barowa w lokalu" loading="lazy"><div class="cap">Zabudowa barowa w lokalu</div></div>
-      <div class="tile t-third reveal"><img src="img/g3.jpg" alt="Fronty lakierowane z naszej lakierni" loading="lazy"><div class="cap">Fronty lakierowane z naszej lakierni</div></div>
-      <div class="tile t-third reveal"><img src="img/g4.jpg" alt="Zabudowa łazienkowa" loading="lazy"><div class="cap">Zabudowa łazienkowa</div></div>
-      <div class="tile t-third reveal"><img src="img/g5.jpg" alt="Kuchnia w drewnie" loading="lazy"><div class="cap">Kuchnia w drewnie</div></div>
+    <div class="gallery" id="gallery">
+      <figure class="tile t-8 t-r2 reveal" data-full="img/g1.jpg" data-cap="Kuchnia z wyspą na wymiar">
+        <picture><source srcset="img/g1.webp" type="image/webp"><img src="img/g1.jpg" alt="Kuchnia z wyspą na wymiar" loading="lazy" width="1400" height="900"></picture>
+        <figcaption class="cap">Kuchnia z wyspą<small>Fronty białe, korpusy do sufitu</small></figcaption>
+      </figure>
+      <figure class="tile t-4 reveal" data-d="1" data-full="img/g11.jpg" data-cap="Szafa z drzwiami przesuwnymi">
+        <picture><source srcset="img/g11.webp" type="image/webp"><img src="img/g11.jpg" alt="Szafa z drzwiami przesuwnymi i drewnianą zabudową" loading="lazy" width="1500" height="1001"></picture>
+        <figcaption class="cap">Szafa przesuwna<small>Lustro i drewno</small></figcaption>
+      </figure>
+      <figure class="tile t-4 reveal" data-d="2" data-full="img/g9.jpg" data-cap="Obudowa kominka z ryflowanym frontem">
+        <picture><source srcset="img/g9.webp" type="image/webp"><img src="img/g9.jpg" alt="Obudowa kominka z ryflowanym frontem" loading="lazy" width="909" height="1500"></picture>
+        <figcaption class="cap">Obudowa kominka<small>Ryflowany front</small></figcaption>
+      </figure>
+      <figure class="tile t-4 reveal" data-full="img/g2.jpg" data-cap="Zabudowa barowa w lokalu">
+        <picture><source srcset="img/g2.webp" type="image/webp"><img src="img/g2.jpg" alt="Zabudowa barowa w lokalu gastronomicznym" loading="lazy" width="1500" height="1125"></picture>
+        <figcaption class="cap">Zabudowa barowa<small>Realizacja w lokalu</small></figcaption>
+      </figure>
+      <figure class="tile t-4 reveal" data-d="1" data-full="img/g14.jpg" data-cap="Komoda z frezowanym frontem">
+        <picture><source srcset="img/g14.webp" type="image/webp"><img src="img/g14.jpg" alt="Komoda z frezowanym frontem" loading="lazy" width="1500" height="999"></picture>
+        <figcaption class="cap">Komoda w salonie<small>Detal frontu</small></figcaption>
+      </figure>
+      <figure class="tile t-4 reveal" data-d="2" data-full="img/g7.jpg" data-cap="Komoda RTV z frezowanym frontem">
+        <picture><source srcset="img/g7.webp" type="image/webp"><img src="img/g7.jpg" alt="Komoda RTV z frezowanym frontem na jodełce" loading="lazy" width="1400" height="988"></picture>
+        <figcaption class="cap">Zabudowa RTV<small>Fronty ryflowane</small></figcaption>
+      </figure>
+      <figure class="tile t-3 reveal" data-full="img/g4.jpg" data-cap="Zabudowa łazienkowa">
+        <picture><source srcset="img/g4.webp" type="image/webp"><img src="img/g4.jpg" alt="Zabudowa łazienkowa z drewnianym frontem" loading="lazy" width="998" height="1500"></picture>
+        <figcaption class="cap">Łazienka<small>Szafka podumywalkowa</small></figcaption>
+      </figure>
+      <figure class="tile t-3 reveal" data-d="1" data-full="img/g8.jpg" data-cap="Zabudowa przedpokoju">
+        <picture><source srcset="img/g8.webp" type="image/webp"><img src="img/g8.jpg" alt="Zabudowa przedpokoju na wymiar" loading="lazy" width="1055" height="1492"></picture>
+        <figcaption class="cap">Przedpokój<small>Zabudowa do sufitu</small></figcaption>
+      </figure>
+      <figure class="tile t-3 reveal" data-d="2" data-full="img/g10.jpg" data-cap="Sypialnia z zabudową narożną">
+        <picture><source srcset="img/g10.webp" type="image/webp"><img src="img/g10.jpg" alt="Sypialnia z zabudową narożną" loading="lazy" width="1035" height="1500"></picture>
+        <figcaption class="cap">Sypialnia<small>Zabudowa narożna</small></figcaption>
+      </figure>
+      <figure class="tile t-3 reveal" data-d="3" data-full="img/g5.jpg" data-cap="Kuchnia w drewnie">
+        <picture><source srcset="img/g5.webp" type="image/webp"><img src="img/g5.jpg" alt="Kuchnia z frontami drewnianymi" loading="lazy" width="997" height="1500"></picture>
+        <figcaption class="cap">Kuchnia w drewnie<small>Fronty lite</small></figcaption>
+      </figure>
+      <figure class="tile t-6 reveal" data-full="img/g13.jpg" data-cap="Salon z zabudową pod skosem">
+        <picture><source srcset="img/g13.webp" type="image/webp"><img src="img/g13.jpg" alt="Salon z zabudową pod skosem" loading="lazy" width="1500" height="1000"></picture>
+        <figcaption class="cap">Salon pod skosem<small>Zabudowa i meble</small></figcaption>
+      </figure>
+      <figure class="tile t-6 reveal" data-d="1" data-full="img/g12.jpg" data-cap="Kuchnia z wyspą i zielonymi frontami">
+        <picture><source srcset="img/g12.webp" type="image/webp"><img src="img/g12.jpg" alt="Kuchnia z wyspą i zielonymi frontami" loading="lazy" width="1500" height="1000"></picture>
+        <figcaption class="cap">Kuchnia z wyspą<small>Fronty barwione</small></figcaption>
+      </figure>
     </div>
-    <div style="margin-top:var(--space-7)" class="reveal"><a href="realizacje.html" class="btn btn-accent">Pełna galeria <span class="arr">→</span></a></div>
+    <p class="gal-note reveal">Wybrane meble, fronty i materiały z naszej pracowni. Pozostałe kadry są poglądowe — pełne portfolio pokażemy przy wycenie, a próbniki obejrzysz w showroomie w Radonicach.</p>
   </div>
 </section>
-<section class="trust">
+
+<!-- ============ LAKIERNIA I CNC ============ -->
+<section id="lakiernia" class="dark-sec">
+  <div class="wrap duo">
+    <div class="duo-art reveal">
+      <div class="ph"><picture><source srcset="img/g3.webp" type="image/webp"><img src="img/g3.jpg" alt="Fronty i próbki materiałów z lakierni MITAR" loading="lazy" width="1500" height="1500"></picture></div>
+      <div class="ph"><picture><source srcset="img/g6.webp" type="image/webp"><img src="img/g6.jpg" alt="Próbniki płyt i frontów meblowych" loading="lazy" width="1235" height="1500"></picture></div>
+    </div>
+    <div class="reveal" data-d="1">
+      <span class="eyebrow">Lakiernia i CNC</span>
+      <h2>Własna lakiernia i maszyny CNC — także na zlecenie</h2>
+      <p>Front jedzie do malowania od razu po frezowaniu, bez wożenia po podwykonawcach. Kolor wybierasz z próbnika i widzisz go na wzorniku, zanim pójdzie na całą kuchnię.</p>
+      <div class="b2b">
+        <div class="row"><span class="k">01</span><div><h3>Lakierowanie frontów</h3><p>Malowanie w hali obok obróbki płyty. Wszystkie elementy z jednego zamówienia schodzą w tym samym odcieniu.</p></div></div>
+        <div class="row"><span class="k">02</span><div><h3>Frezowanie CNC</h3><p>Ryflowanie, wzory i powtarzalne detale w jednym cyklu — każdy komplet wychodzi identyczny.</p></div></div>
+        <div class="row"><span class="k">03</span><div><h3>Usługi dla stolarni</h3><p>Przywozisz rysunek, odbierasz wyfrezowane elementy albo gotowe lakierowane fronty pod swój montaż. Termin ustalamy przy przyjęciu zlecenia.</p></div></div>
+      </div>
+      <a href="#kontakt" class="btn btn-gold" style="margin-top:var(--s7)">Wyceń zlecenie CNC lub lakierowanie <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPINIE ============ -->
+<section id="opinie">
   <div class="wrap">
     <div class="head reveal">
       <span class="eyebrow">Opinie</span>
       <h2>Co mówią klienci</h2>
-      <p>Ocena 4,1 w Google na podstawie 34 opinii. Poniżej dwie z nich, w całości.</p>
     </div>
-    <div class="trust-grid">
-      <div class="trust-card reveal">
-        <p>„Profesjonalizm, kultura i do tego jakość jednym słowem - rewelacja! Pomoc na każdym etapie realizacji od projektowania po umiejętne doradzanie w sprawie rozwiązań. Realizacja niestandardowych pomysłów nie stanowi dla nich problemu, firma szukająca rozwiązań, zamiast mówić klientowi »tego się nie da zrealizować«. Z całego serca polecam jako realizatorów!"</p>
-        <h3>Julita Musinska</h3>
-      </div>
-      <div class="trust-card reveal">
-        <p>„Jeśli szukacie mebli do zabudowy czy wolnostojących wg waszego pomysłu to szczerze polecam. Kontakt do Mitaru dostałem z polecenia i ze startu okazało się, że naprawdę mega znają się na robocie. Sami projektują i robią fronty więc można u nich zrealizować bardzo indywidualne pomysły. W skrócie: kontakt TOP, jakość TOP, podejście do klienta TOP."</p>
-        <h3>Damian Ługowski</h3>
-      </div>
+    <div class="rating reveal">
+      <span class="score">4,1</span>
+      <span>
+        <span class="stars" aria-hidden="true">★★★★<span style="opacity:.32">★</span></span>
+        <span class="meta">Ocena w Google na podstawie 34 opinii · <a href="https://maps.app.goo.gl/aGMmMu8ywsWCHsJr5" target="_blank" rel="noopener">zobacz wizytówkę</a></span>
+      </span>
     </div>
-  </div>
-</section>
-<section class="cta">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">Współpraca</span>
-      <h2>Zacznijmy od krótkiej rozmowy.</h2>
-      <p>Napisz lub zadzwoń - powiemy, co i jak, bez zobowiązań.</p>
-    </div>
-    <div class="cta-actions reveal">
-      <a href="kontakt.html" class="btn btn-light">Zapytaj o wycenę <span class="arr">→</span></a>
-      <a href="tel:+48660410583" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.3)">+48 660 410 583</a>
+    <div class="quotes">
+      <blockquote class="quote reveal">
+        <p>Profesjonalizm, kultura i do tego jakość — jednym słowem rewelacja. Pomoc na każdym etapie realizacji, od projektowania po umiejętne doradzanie w sprawie rozwiązań. Realizacja niestandardowych pomysłów nie stanowi dla nich problemu: firma szuka rozwiązań, zamiast mówić klientowi „tego się nie da zrealizować". Z całego serca polecam.</p>
+        <div class="who"><b>Julita Musinska</b>Opinia w Google</div>
+      </blockquote>
+      <blockquote class="quote reveal" data-d="1">
+        <p>Jeśli szukacie mebli do zabudowy czy wolnostojących według waszego pomysłu, to szczerze polecam. Kontakt do Mitaru dostałem z polecenia i od startu okazało się, że naprawdę znają się na robocie. Sami projektują i robią fronty, więc można u nich zrealizować bardzo indywidualne pomysły. W skrócie: kontakt TOP, jakość TOP, podejście do klienta TOP.</p>
+        <div class="who"><b>Damian Ługowski</b>Opinia w Google</div>
+      </blockquote>
     </div>
   </div>
 </section>
 
+<!-- ============ KONTAKT ============ -->
+<section id="kontakt" class="contact">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Kontakt</span>
+      <h2>Zacznijmy od krótkiej rozmowy</h2>
+      <p>Napisz, co chcesz zrobić — odpowiemy z propozycją i terminem pomiaru. Bez zobowiązań.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="info">
+          <div class="row">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.5 3h3l1.5 4-2 1.5a11 11 0 005.5 5.5L16 12l4 1.5v3a2 2 0 01-2.2 2A15.5 15.5 0 014 6.2 2 2 0 016.5 3Z"/></svg></span>
+            <span><span class="lbl">Telefon</span><a class="val" href="tel:+48660410583">660 410 583</a><span class="sub">poniedziałek – piątek, 7:00 – 15:00</span></span>
+          </div>
+          <div class="row">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg></span>
+            <span><span class="lbl">E-mail</span><a class="val" href="mailto:mitarmeble@gmail.com">mitarmeble@gmail.com</a></span>
+          </div>
+          <div class="row">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+            <span><span class="lbl">Warsztat i showroom</span><span class="val">Radonice 38, 05-870 Radonice</span><span class="sub">gmina Błonie · <a href="https://maps.app.goo.gl/aGMmMu8ywsWCHsJr5" target="_blank" rel="noopener" style="border-bottom:1px solid var(--gold)">jak dojechać</a></span></span>
+          </div>
+          <div class="row">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="17"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></span>
+            <span><span class="lbl">Pomiar</span><span class="val">Bezpłatny, u Ciebie</span><span class="sub">Razem z projektem i wyceną, bez zobowiązań.</span></span>
+          </div>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps?q=Radonice%2038,%2005-870%20Radonice&output=embed" loading="lazy" title="Mapa: MITAR, Radonice 38" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <form class="form reveal" data-d="1" id="askForm">
+        <div class="two">
+          <div class="fld"><label for="f-name">Imię lub firma</label><input id="f-name" name="name" type="text" required autocomplete="name"></div>
+          <div class="fld"><label for="f-phone">Telefon</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel"></div>
+        </div>
+        <div class="fld"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+        <div class="fld"><label for="f-topic">Czego dotyczy zapytanie</label>
+          <select id="f-topic" name="topic">
+            <option>Kuchnia na wymiar</option>
+            <option>Szafa lub garderoba</option>
+            <option>Zabudowa wnęki albo skosu</option>
+            <option>Meble pokojowe / RTV</option>
+            <option>Meble łazienkowe</option>
+            <option>Blaty i lite drewno</option>
+            <option>Lakierowanie frontów lub CNC (dla stolarni)</option>
+            <option>Inne</option>
+          </select>
+        </div>
+        <div class="fld"><label for="f-msg">Szczegóły</label><textarea id="f-msg" name="message" placeholder="Miejscowość, pomieszczenie, przybliżone wymiary, termin."></textarea></div>
+        <button class="btn btn-gold" type="submit" style="width:100%">Wyślij zapytanie <span class="arr">→</span></button>
+        <p class="note">Zapytanie otworzy się w Twoim programie pocztowym z wpisaną treścią — wystarczy je wysłać. Można też po prostu zadzwonić: <a href="tel:+48660410583" style="color:var(--gold-text)">660 410 583</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOMKNIĘCIE ============ -->
+<section class="closing">
+  <div class="wrap">
+    <img class="mark reveal" src="img/logo.png" alt="MITAR — rodzinna manufaktura pięknych wnętrz" width="323" height="330" loading="lazy">
+    <div class="reveal" data-d="1">
+      <h2>Powiedz, co ma stanąć — resztę policzymy i narysujemy</h2>
+      <p>Pomiar u Ciebie i projekt z wymiarami są bezpłatne. Decyzję podejmujesz na spokojnie.</p>
+      <div class="acts">
+        <a href="tel:+48660410583" class="btn btn-gold">Zadzwoń: 660 410 583</a>
+        <a href="mailto:mitarmeble@gmail.com" class="btn btn-ghost">Napisz e-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STOPKA ============ -->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <div class="name">MITAR</div>
-        <p>Kuchnie, szafy i zabudowy na wymiar - od 25 lat w Błoniu. Jeden warsztat, od pierwszej miary po ostatni front.</p>
+        <img src="img/logo-light.png" alt="MITAR" width="323" height="330" loading="lazy">
+        <p>MITAR Sp. z o.o. — rodzinna manufaktura pięknych wnętrz. Kuchnie, szafy i zabudowy na wymiar, własna lakiernia meblowa i frezowanie CNC. Radonice pod Błoniem, od 2001 roku.</p>
       </div>
       <div class="foot-col">
-        <h4>Nawigacja</h4>
-        <a href="index.html">Strona główna</a>
-        <a href="realizacje.html">Realizacje</a>
-        <a href="oferta.html">Oferta</a>
-        <a href="o-nas.html">O nas</a>
-        <a href="kontakt.html">Kontakt</a>
+        <h4>Na stronie</h4>
+        <a href="#manufaktura">Manufaktura</a>
+        <a href="#zakres">Zakres</a>
+        <a href="#realizacje">Realizacje</a>
+        <a href="#lakiernia">Lakiernia i CNC</a>
+        <a href="#opinie">Opinie</a>
+        <a href="#kontakt">Kontakt</a>
       </div>
       <div class="foot-col">
         <h4>Kontakt</h4>
-        <a href="tel:+48660410583">+48 660 410 583</a>
+        <a href="tel:+48660410583">660 410 583</a>
         <a href="mailto:mitarmeble@gmail.com">mitarmeble@gmail.com</a>
-        <p>Radonice 38, 05-870 Radonice (gm. Błonie)</p>
+        <p>Radonice 38, 05-870 Radonice<br>gmina Błonie</p>
+        <p>pon. – pt. 7:00 – 15:00</p>
         <a href="https://maps.app.goo.gl/aGMmMu8ywsWCHsJr5" target="_blank" rel="noopener">Jak dojechać →</a>
       </div>
     </div>
     <div class="foot-bot">
-      <span>© 2026 MITAR</span>
-      <span>Projekt strony: Krzysztof Brzeziński</span>
+      <span>© 2026 MITAR Sp. z o.o.</span>
+      <span>Wersja demonstracyjna strony · projekt: Impulseo</span>
     </div>
   </div>
 </footer>
 
+<a class="call" href="tel:+48660410583">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6.5 3h3l1.5 4-2 1.5a11 11 0 005.5 5.5L16 12l4 1.5v3a2 2 0 01-2.2 2A15.5 15.5 0 014 6.2 2 2 0 016.5 3Z"/></svg>
+  660 410 583
+</a>
 
+<!-- lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększenie zdjęcia">
+  <button class="lb-x" id="lbX" aria-label="Zamknij">✕</button>
+  <button class="lb-p" id="lbP" aria-label="Poprzednie">‹</button>
+  <button class="lb-n" id="lbN" aria-label="Następne">›</button>
+  <img id="lbImg" alt="">
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FurnitureStore",
+  "name":"MITAR Sp. z o.o.",
+  "description":"Rodzinna manufaktura mebli na wymiar. Kuchnie, szafy i zabudowy, własna lakiernia meblowa i frezowanie CNC.",
+  "foundingDate":"2001",
+  "telephone":"+48660410583",
+  "email":"mitarmeble@gmail.com",
+  "address":{"@type":"PostalAddress","streetAddress":"Radonice 38","postalCode":"05-870","addressLocality":"Radonice","addressRegion":"mazowieckie","addressCountry":"PL"},
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"15:00"}],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"34"}
+}
+</script>
 <script src="assets/main.js"></script>
 </body>
 </html>
